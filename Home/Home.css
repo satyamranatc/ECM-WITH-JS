@@ -44,8 +44,35 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  flex-direction: column;
+  height: -moz-fit-content;
+  height: fit-content;
   font-size: 6vmax;
+}
+
+#carouselExampleIndicators {
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+.carousel-inner .carousel-item {
+  height: 100%;
+  width: 100%;
+}
+.carousel-inner .carousel-item img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 
 @media screen and (max-width: 700px) {
@@ -65,4 +92,40 @@ main {
     flex-direction: column;
     row-gap: 10px;
   }
+  #carouselExampleIndicators {
+    display: none;
+  }
+}
+#Cards {
+  position: relative;
+  margin: 0 auto;
+  top: 30px;
+  width: 98%;
+  box-shadow: 0px 10px 20px gray;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 10px;
+  padding: 20px;
+}
+
+.Card {
+  display: grid;
+  place-items: center;
+  border: 1px solid black;
+  font-size: 50px;
+}
+
+.Card:nth-child(1) {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.Card:nth-child(1) video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=Home.css.map */
