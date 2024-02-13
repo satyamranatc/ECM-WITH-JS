@@ -40,14 +40,6 @@ nav ul li a {
           user-select: none;
 }
 
-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 70vh;
-  font-size: 4vmax;
-}
-
 @media screen and (max-width: 700px) {
   * {
     font-size: 18px;
@@ -64,5 +56,95 @@ main {
   nav ul {
     flex-direction: column;
     row-gap: 10px;
+  }
+}
+main {
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 2px solid red;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  row-gap: 25px;
+}
+
+.Card {
+  box-shadow: 0px 10px 20px rgb(179, 179, 179);
+  color: white;
+  padding: 10px 3px;
+  height: 590px;
+  min-width: 350px;
+  flex: 1;
+}
+.Card .CardImage {
+  height: 60%;
+  width: 100%;
+}
+.Card .CardImage img {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 3/2;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.CardContent {
+  color: black;
+  height: 40%;
+  padding: 20px;
+}
+
+.CardContent p:nth-of-type(1) {
+  font-size: 1.6vmax;
+}
+
+.CardContent p:nth-of-type(2) {
+  font-size: 1.1vmax;
+  margin-top: 0.5vmax;
+  height: 70px;
+  color: gray;
+}
+
+.CardContent p:nth-of-type(3) {
+  float: right;
+}
+
+.CardBtns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.3vmax;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.CardBtns button {
+  max-width: 160px;
+  flex: 1;
+  padding: 0.7vmax;
+  background-color: rgb(28, 28, 28);
+  border: none;
+  border-radius: 30px;
+  color: white;
+}
+
+.CardBtns button:last-child {
+  background: transparent;
+  border: 2px solid black;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .CardContent p:nth-of-type(1) {
+    font-size: 2.1vmax;
+  }
+  .CardContent p:nth-of-type(2) {
+    font-size: 1.7vmax;
+    margin-top: 1vmax;
+    color: gray;
   }
 }/*# sourceMappingURL=Product.css.map */

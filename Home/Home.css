@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: snow;
+  background-color: black;
   color: black;
   font-family: "Inter", sans-serif;
 }
@@ -115,17 +115,33 @@ main {
 .Card {
   display: grid;
   place-items: center;
-  border: 1px solid black;
+  color: white;
   font-size: 50px;
 }
 
 .Card:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-row-start: 1;
   grid-row-end: 3;
 }
-.Card:nth-child(1) video {
+.Card:nth-child(1) img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.Card:nth-child(2) {
+  border: 1px solid white;
+  position: relative;
+  background-color: red;
+  background-image: url(https://images-eu.ssl-images-amazon.com/images/W/MEDIAX_849526-T3/images/G/31/img21/CE/HP2/Boat_Pc_CC_1x._SY304_CB596084660_.jpg);
+  background-position: center;
+}
+
+.Card:nth-child(3) {
+  color: white;
+  border: 1px solid white;
 }/*# sourceMappingURL=Home.css.map */
