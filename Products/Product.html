@@ -10,6 +10,10 @@
 
     <nav>
         <h2>The Great Shop</h2>
+        <div id="SearchBar">
+            <input id = "SearchBox" placeholder="Search Your Products..." type="text">
+            <img id = "SearchLogo" src="./bx-search.svg" alt="">
+        </div>
         <ul>
             <li><a href="/Home/Home.html">Home</a></li>
             <li><a href="/Products/Product.html">Products</a></li>
@@ -18,12 +22,13 @@
         </ul>
     </nav>
 
-    <nav>
+    <nav id = "Nav2">
+        
         <ul>
-            <li onclick="filterData('Electronics')" >Electronics</li>
-            <li onclick="filterData('PersonalCare')" >Personal Care</li>
-            <li onclick="filterData('Grocery')" >Grocery</li>
-            <li onclick="filterData('Decorations')" >Decorations</li>
+            <li class = "Nav2Li" >Electronics</li>
+            <li class = "Nav2Li" >Personal Care</li>
+            <li class = "Nav2Li"  >Grocery</li>
+            <li class = "Nav2Li">Decorations</li>
         </ul>
     </nav>
 

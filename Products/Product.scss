@@ -7,8 +7,8 @@
 
 body
 {
-    background-color: snow;
-    color: black;
+    background-color: black;
+    color: white;
     font-family: sans-serif;
 }
 nav
@@ -26,6 +26,7 @@ nav
         color: white;
         font-size: 2rem;
     }
+
 
     ul
     {
@@ -48,6 +49,75 @@ nav
         }
     }
 
+}
+
+
+#SearchBar
+{
+    // border: 1px solid white;
+    width: 50%;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+#SearchBar input
+{
+    width: 100%;
+    padding: 5px 25px;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#SearchBar img
+{
+    height: 98%;
+    width: 80%;
+    object-fit: contain;
+    position: absolute;
+    right: 0;
+    width: 70px;
+    background-color: lightgray;
+    border-radius: 0 5rgb(237, 236, 236)
+
+}
+
+#Nav2
+{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+
+}
+#Nav2 ul
+{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#Nav2 ul li
+{
+    padding: 10px 30px;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+   
+}
+.Nav2LiBg
+{
+    background-color: rgb(0, 225, 255);
+    color:black;
+    // color: white;
 }
 
 @media screen and (max-width:700px) 
@@ -83,8 +153,9 @@ nav
 
 main{
     height: fit-content;
-
-    border: 2px solid red;
+    position: relative;
+    top:70px;
+    // border: 2px solid red;
     padding: 20px;
 
     display: flex;
@@ -98,10 +169,11 @@ main{
 .Card
 {
 
-    box-shadow: 0px 10px 20px rgb(179, 179, 179);
+    box-shadow: 0px 10px 20px rgb(44, 44, 44);
     // background-color: teal;
     color: white;
     padding: 10px 3px;
+    border-radius: 10px;
 
     // height: 30vmax;
     height: 590px;
@@ -124,6 +196,8 @@ main{
         aspect-ratio: 3/2;
         object-fit: contain;
         object-position: center;
+        // border-radius: 20px;
+     
     }
 }
 
@@ -132,7 +206,7 @@ main{
 
 .CardContent
 {
-    color: black;
+    color: white;
     // border: 1px solid black;
     height: 40%;
     padding: 20px;
@@ -141,18 +215,24 @@ main{
 .CardContent p:nth-of-type(1)
 {
     font-size: 1.6vmax;
+
 }
 .CardContent p:nth-of-type(2)
 {
+    
+
+    overflow: hidden;
     font-size: 1.1vmax;
     margin-top: .5vmax;
-    height: 70px;
+    height: 40px;
     color: gray;
+    
 }
 
 .CardContent p:nth-of-type(3)
 {
     float: right;
+    margin-top: 20px;
 }
 
 .CardBtns
@@ -174,7 +254,7 @@ main{
     flex: 1;
     padding: .7vmax;
 
-    background-color: rgb(28, 28, 28);
+    background-color: rgb(54, 53, 53);
     border: none;
     border-radius: 30px;
     color: white;
@@ -186,6 +266,7 @@ main{
     background:transparent ;
     border: 2px solid black;
     color: black;
+    background-color: white;
 }
 
 
